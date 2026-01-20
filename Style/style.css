@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 
-:root {}
-
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    scrollbar-width: none;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    align-items: center;
+    padding: 28px 0px;
+    gap: 100px;
     background-color: #1c1b3b;
 }
 
@@ -22,23 +27,281 @@ body {
     gap: 30px;
 }
 
-nav ul {
+.header nav ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li a {
+.header nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .support-btn a {
     text-decoration: none;
+    background-color: blue;
+    padding: 29px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.contact-info p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.svg-div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.svg-div svg {
+    height: 20px;
+}
+
+.call-svg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.call-svg svg {
+    height: 20px;
+}
+
+.main-header .kindergarden-logo img {
+    max-width: 400px;
+}
+
+.hero-section-container {
+    position: relative;
+    background-image: url(/images/vector-cartoon-illustration-school-building-green-lawn-road-trees-educalion-l_134830-1588.avif);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+
+.hero-section-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+.hero-section-container>* {
+    position: relative;
+    z-index: 2;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-header.scrolled {
+    background-color: #1c1b3b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.main-header nav ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #bfbfbf;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.main-header nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.main-header nav ul li .first-a {
+    color: #ffffff;
+}
+
+.search-div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.search-div svg {
+    height: 20px;
+}
+
+.hero-content-container {
+    display: flex;
+    padding: 0 60px;
+    margin: 0 80px;
+}
+
+.hero-content i {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.hero-content h2 {
+    font-size: 47px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.hero-content {
+    margin-top: 40px;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.hero-content .take-a-tour-btn a {
+    color: #ffffff;
     background-color: #c50227;
-    padding: 21px;
+    padding: 20px 0;
+    text-decoration: none;
+    margin-top: 30px;
+    display: block;
+    max-width: 180px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.background-container1 {
+    display: flex;
+    background-color: #c50227;
+    padding: 40px;
+}
+
+.background-container2 {
+    background-color: #980a25;
+    padding: 40px;
+}
+
+.background-container3 {
+    background-color: #78091E;
+    padding: 40px;
+}
+
+.school-life-container {
+    display: flex;
+    gap: 20px;
+}
+
+.Card-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.container p {
+    max-width: 430px;
+    color: #555555;
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+.building-img img {
+    max-width: 440px;
+}
+
+.school-life h3 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.school-life a {
+    color: #ffffff;
+    letter-spacing: 0.4px;
+}
+
+.learn-more-btn a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.learn-more-btn a svg {
+    height: 14px;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #1c1b3b;
+        display: none;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+}
+
+@media (max-width: 448px) {
+    .header {
+        display: none;
+    }
+
+    .main-header {
+        margin-top: 0;
+        padding: 10px 20px;
+    }
 }
