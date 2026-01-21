@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1c1b3b;
+    --secondary-color: blue;
+    --text-color: #ffffff;
+}
+
 body {
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
@@ -13,295 +20,625 @@ body::-webkit-scrollbar {
     scrollbar-width: none;
 }
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 28px 0px;
-    gap: 100px;
-    background-color: #1c1b3b;
-}
-
-.contact-info {
-    display: flex;
-    gap: 30px;
-}
-
-.header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-}
-
-.header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.support-btn a {
-    text-decoration: none;
-    background-color: blue;
-    padding: 29px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.contact-info p {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-}
-
-.svg-div {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.svg-div svg {
-    height: 20px;
-}
-
-.call-svg {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.call-svg svg {
-    height: 20px;
-}
-
-.main-header .kindergarden-logo img {
-    max-width: 400px;
-}
-
-.hero-section-container {
-    position: relative;
+.hero-section {
     background-image: url(/images/vector-cartoon-illustration-school-building-green-lawn-road-trees-educalion-l_134830-1588.avif);
-    height: 700px;
-    width: 100%;
     background-size: cover;
+    height: 700px;
 }
 
-.hero-section-container::after {
+.hero-section::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-    z-index: 1;
-}
-
-.hero-section-container>* {
-    position: relative;
+    background: linear-gradient(to bottom, rgba(17, 15, 15, 0.4), rgba(25, 16, 16, 0.2));
     z-index: 2;
+    overflow: hidden;
 }
 
-.main-header {
-    width: 100%;
+.hero-section>* {
+    position: relative;
+    z-index: 3;
+}
+
+.top-header {
     display: flex;
-    align-items: center;
+    background-color: var(--primary-color);
+    padding: 30px 100px;
     justify-content: space-between;
-    padding: 15px 60px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.main-header.scrolled {
-    background-color: #1c1b3b;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.main-header nav ul {
+.container {
     display: flex;
     gap: 20px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.message p {
+    color: var(--text-color);
+}
+
+.call p {
+    color: var(--text-color);
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.support-ku-btn a {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+header .logo img {
+    max-width: 350px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
     list-style-type: none;
 }
 
-.main-header nav ul a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #bfbfbf;
-    font-size: 16px;
-    transition: all 0.4s;
-}
-
-.main-header nav ul li a:hover {
-    color: blue;
+nav ul li:first-child a {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    color: var(--text-color);
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 7px;
 }
 
-.main-header nav ul li .first-a {
-    color: #ffffff;
+
+nav ul li a {
+    color: #6b6b6b;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-decoration-thickness: 4px;
+    font-size: 18px;
 }
 
-.search-div {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+nav ul li a:hover {
+    color: var(--secondary-color);
+    /* text-decoration: underline; */
+    text-decoration: underline;
+    color: var(--text-color);
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 7px;
 }
 
-.search-div svg {
-    height: 20px;
-}
 
 .hero-content-container {
-    display: flex;
-    padding: 0 60px;
-    margin: 0 80px;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
 }
 
 .hero-content i {
-    font-size: 39px;
-    color: #ffffff;
-    font-weight: 500;
+    font-size: 47px;
+    color: var(--text-color);
 }
 
 .hero-content h2 {
-    font-size: 47px;
-    color: #ffffff;
+    color: var(--text-color);
+    font-size: 97px;
     font-weight: 500;
-}
-
-.hero-content {
-    margin-top: 40px;
-    padding: 30px;
-    padding-top: 50px;
-}
-
-.hero-content .take-a-tour-btn a {
-    color: #ffffff;
-    background-color: #c50227;
-    padding: 20px 0;
-    text-decoration: none;
-    margin-top: 30px;
-    display: block;
-    max-width: 180px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 8px;
-}
-
-.background-container1 {
-    display: flex;
-    background-color: #c50227;
-    padding: 40px;
-}
-
-.background-container2 {
-    background-color: #980a25;
-    padding: 40px;
-}
-
-.background-container3 {
-    background-color: #78091E;
-    padding: 40px;
-}
-
-.school-life-container {
-    display: flex;
-    gap: 20px;
 }
 
 .Card-container {
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 35px;
     flex-wrap: wrap;
+    /* align-items: center; */
+    /* padding: 30px; */
 }
 
-.container p {
-    max-width: 430px;
-    color: #555555;
-    margin-top: 20px;
-    line-height: 28px;
-    font-size: 15px;
-    letter-spacing: 0px;
+.background-container {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    overflow: hidden;
 }
 
-.building-img img {
-    max-width: 440px;
-}
-
-.school-life h3 {
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.school-life a {
-    color: #ffffff;
-    letter-spacing: 0.4px;
-}
-
-.learn-more-btn a {
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-    margin-top: 20px;
+.school-life {
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.learn-more-btn a svg {
-    height: 14px;
-}
-
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.nav-menu ul {
-    display: flex;
-    list-style: none;
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
+.academic-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.athletics-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.background-container h3 {
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.background-container a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Card {
+    position: relative;
+    z-index: 10;
+    bottom: 30px;
+}
+
+.Card .building-img img {
+    max-width: 450px;
+}
+
+.Card .business-man img {
+    max-width: 450px;
+}
+
+.Card .work-from-home img {
+    max-width: 450px;
+}
+
+.wonder-ful-content p {
+    max-width: 400px;
+    font-size: 15px;
+    color: #555555;
+    margin-top: 20px;
+}
+
+.wonder-ful-content a {
+    display: block;
+    margin-top: 20px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.learn-more {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.learn-more svg {
+    height: 28px;
+    color: var(--secondary-color);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.flex-container h3 {
+    font-size: 20px;
+    color: #212052;
+}
+
+.flex-container .school-video-tour hr {
+    width: 430px;
+    background-color: var(--secondary-color);
+    padding: 1.4px;
+    border: none;
+    margin-top: 10px;
+}
+
+.flex-container .School-news-update hr {
+    width: 875px;
+    background-color: var(--secondary-color);
+    padding: 1.4px;
+    border: none;
+    margin-top: 10px;
+    /* width: 100%; */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    /* margin-top: 20px; */
+}
+
+.video-img {
+    position: relative;
+    width: 420px;
+    height: 250px;
+    background-image: url("/images/shutterstock_59887279-900x500.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* margin: 40px 0; */
+}
+
+.video-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-img svg {
+    color: #ffffff;
+    height: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.take-a-tour p {
+    max-width: 420px;
+    color: #5c5c5c;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.school-new-update-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    padding-left: 0px;
+    left: 40px;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.shuttor-container {
+    margin-top: 20px;
+}
+
+.shuttor-stock img {
+    height: 80px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.shutter-stock a {
+    color: #959595;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.shutter-stock a h3 {
+    color: #212052;
+    letter-spacing: 0;
+    max-width: 315px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.shuttor-stock-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+.read-blog-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.read-blog-btn a {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    /* margin-top: 20px; */
+}
+
+.read-blog-btn svg {
+    height: 26px;
+}
+
+.study-container {
+    background-image: url(/images/study-image.avif);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
+
+.study-container {
+    height: 600px;
+    background-image:
+        linear-gradient(to right, rgba(15, 18, 70, 0.3), rgba(15, 18, 70, 1)),
+        url(/images/study-image.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 100px;
+    /* margin-right: 40px; */
+}
+
+.study-content {
+    margin-right: 80px;
+}
+
+.study-container h2 {
+    font-size: 38px;
+    /* font-weight: 600; */
+    color: var(--text-color);
+    /* text-align: right; */
+}
+
+.study-container h3 {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-color);
+    /* text-align: right; */
+    margin-top: 5px;
+}
+
+.study-container p {
+    color: #d7d6ff;
+    font-size: 18px;
+    max-width: 550px;
+    /* margin-left: auto; */
+    margin-top: 20px;
+}
+
+.study-container {
+    margin-top: 50px;
+}
+
+.apply-btn {
+    margin-top: 30px;
+}
+
+.apply-btn a {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+@media (max-width:448px) {
+    .hero-section::after {
+        height: 700px;
+        /* overflow: hidden; */
     }
 
-    .nav-menu {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #1c1b3b;
+    .hero-content-container {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .top-header {
+        display: none;
+        margin-top: 0;
+    }
+
+    header {
+        margin-top: 0;
         display: none;
     }
 
-    .nav-menu ul {
-        flex-direction: column;
-        padding: 20px;
+    .hero-content {
+        margin-top: 100px;
+        padding-top: 80px;
     }
 
-    .nav-menu.active {
+    .hero-content i {
+        text-align: center;
+        margin: auto;
         display: block;
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .Card-container {
+        gap: 20px;
+    }
+
+    .Card .building-img img {
+        max-width: 440px;
+    }
+
+    .Card .business-man img {
+        max-width: 440px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 440px;
+    }
+
+    .wonder-ful-content {
+        padding-left: 8px;
+    }
+
+    .wonder-ful-content p {
+        max-width: 425px;
+    }
+
+    .school-new-update-container {
+        flex-wrap: wrap;
+    }
+
+    .video-container {
+        flex-wrap: wrap;
+    }
+
+    .shuttor-container {
+        flex-wrap: wrap;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .flex-container .School-news-update hr {
+        width: 400px;
+    }
+
+    .school-new-update-container {
+        flex-wrap: wrap;
+        left: 0;
+        padding-left: 15px;
+        margin-top: 50px;
+    }
+
+    .School-news-update hr {
+        /* position: absolu; */
+        display: none;
+    }
+
+    .video-img {
+        max-width: 380px;
+    }
+
+    .School-news-update h3 {
+        position: relative;
+        top: 400px;
+        right: 70px;
+        /* text-decoration: underline; */
+        border-bottom: 4px solid blue;
+        text-align: left;
+    }
+
+    .flex-container .school-video-tour hr {
+        width: 380px;
+    }
+
+    .study-container {
+        /* align-items: center; */
+        padding: 0;
+        text-align: center;
+    }
+
+    .study-container {
+        justify-content: center;
+    }
+
+    .study-container p {
+        max-width: 395px;
+        font-size: 17px;
+        /* margin: auto; */
     }
 }
 
-@media (max-width: 448px) {
-    .header {
-        display: none;
+@media (max-width: 432px) {
+    .Card-container {
+        align-items: center;
+        justify-content: center;
     }
 
-    .main-header {
-        margin-top: 0;
-        padding: 10px 20px;
+    .background-container {
+        max-width: 380px;
+        margin: auto;
+    }
+
+    .Card .building-img img {
+        max-width: 380px;
+        display: block;
+        margin: auto;
+    }
+
+    .Card .business-man img {
+        max-width: 380px;
+        margin: auto;
+        display: block;
+    }
+
+    .Card .work-from-home img {
+        max-width: 380px;
+        margin: auto;
+        display: block;
+    }
+
+    .hero-content {
+        padding-top: 100px;
+    }
+
+    .wonder-ful-content p {
+        max-width: 370px;
+        font-size: 16px;
+    }
+
+    .take-a-tour p {
+        padding-left: 10px;
+        max-width: 380px;
+    }
+
+    .flex-container .school-video-tour hr {
+        padding: 2px;
+    }
+
+    .School-news-update h3 {
+        right: 60px;
+    }
+
+    .shutter-stock a h3 {
+        max-width: 550px;
+        font-size: 14px;
+    }
+
+    .study-container h2 {
+        font-size: 34px;
+    }
+
+    .study-container p {
+        max-width: 340px;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 15px;
     }
 }
