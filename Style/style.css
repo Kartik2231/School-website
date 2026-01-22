@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
     background-image: url(/images/vector-cartoon-illustration-school-building-green-lawn-road-trees-educalion-l_134830-1588.avif);
     background-size: cover;
     height: 700px;
+    position: relative;
 }
 
 .hero-section::after {
@@ -36,6 +37,17 @@ body::-webkit-scrollbar {
     background: linear-gradient(to bottom, rgba(17, 15, 15, 0.4), rgba(25, 16, 16, 0.2));
     z-index: 2;
     overflow: hidden;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(30, 30, 30, 0.55),
+            rgba(60, 60, 60, 0.35),
+            rgba(20, 20, 20, 0.6));
+    z-index: 2;
 }
 
 .hero-section>* {
@@ -289,9 +301,8 @@ nav ul li a:hover {
     background-position: center;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     /* margin: 40px 0; */
 }
 
@@ -318,47 +329,22 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.school-new-update-container {
+.school-content-div h3 {
+    font-size: ;
+    color: ;
+
+}
+
+.school-video-tour-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    position: relative;
-    padding-left: 0px;
-    left: 40px;
-    /* align-items: center; */
-    flex-wrap: wrap;
 }
 
-.shuttor-container {
-    margin-top: 20px;
-}
-
-.shuttor-stock img {
-    height: 80px;
-    border-radius: 3px;
-    margin: 10px 0;
-}
-
-.shutter-stock a {
-    color: #959595;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 13px;
-}
-
-.shutter-stock a h3 {
-    color: #212052;
-    letter-spacing: 0;
-    max-width: 315px;
-    line-height: 20px;
-    font-size: 17px;
-}
-
-.shuttor-stock-content {
+.images-content-container {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    /* justify-content: center; */
+}
+
+.school-content-div hr {
+    max-width: 420px;
 }
 
 .read-blog-btn {
@@ -628,12 +614,15 @@ form h2 {
     color: #d7d6ff;
     border-radius: 3px;
     border: none;
+    /* position: relative; */
+    /* z-index: 3; */
 }
 
 input::placeholder {
     color: #d7d6ff;
     font-family: 'Poppins';
     font-size: 18px;
+    position: relative;
 }
 
 .flexbox-container select {
@@ -891,6 +880,7 @@ input::placeholder {
     background-color: #2e2d2d;
     padding: 30px 110px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .copy-right-container p {
@@ -1037,6 +1027,155 @@ input::placeholder {
 
 .icons svg {
     height: 22px;
+}
+
+@media (max-width: 1400px) {
+    .top-header {
+        padding: 25px 60px;
+    }
+
+    header {
+        gap: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 80px;
+    }
+
+    .flex-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-content-container {
+        padding-left: 50px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    header .logo img {
+        max-width: 260px;
+    }
+
+    .Card-container {
+        gap: 30px;
+    }
+
+    .kingster-event hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-header {
+        padding: 20px 30px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 60px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .School-news-update hr,
+    .school-video-tour hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .hero-content-container {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .Card {
+        bottom: 0;
+    }
+
+    .study-container {
+        padding: 40px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .study-content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .Card-container {
+        padding: 0 10px;
+    }
+
+    .background-container {
+        padding: 25px;
+    }
+
+    .video-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    form {
+        padding: 40px 15px;
+    }
+
+    .flexbox-container input,
+    .select-box select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .background-container h3 {
+        font-size: 16px;
+    }
+
+    .content h3 {
+        font-size: 28px;
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    .copy-right-container {
+        text-align: center;
+    }
 }
 
 @media (max-width:448px) {
@@ -1366,15 +1505,113 @@ input::placeholder {
         max-width: 320px;
     }
 
+    .footer {
+        margin-top: 50px;
+    }
+
+    .copy-right-container {
+        padding: 30px 0px;
+        justify-content: center;
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 360px) {
-    body {
-        /* text-align: center; */
-    }
-
     .study-container p {
         max-width: 335px;
         font-size: 14px;
+    }
+
+    .kingster-event hr {
+        width: 350px;
+    }
+
+    .flex-container .school-video-tour hr {
+        width: 350px;
+    }
+
+    .flexbox-container input {
+        width: 330px;
+    }
+
+    .select-box select {
+        width: 330px;
+    }
+
+    .envelop-img {
+        margin-top: 50px;
+    }
+
+    .subscribe-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscribe-content h3 {
+        margin-top: 30px;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .a-content a {
+        max-width: 250px;
+        line-height: 25px;
+    }
+
+    .all-event-btn a {
+        margin-left: 20px;
+    }
+
+    .study-container h2 {
+        font-size: 28px;
+    }
+
+    .study-container h3 {
+        font-size: 17px;
+    }
+
+    .study-container p {
+        /* max-width: 300px; */
+        font-size: 15px;
+    }
+
+    .images img {
+        max-width: 350px;
+    }
+
+    .background-container {
+        max-width: 350px;
+    }
+
+    .Card .building-img img {
+        max-width: 350px;
+    }
+
+    .Card .business-man img {
+        max-width: 350px;
+    }
+
+    .video-img {
+        max-width: 350px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 350px;
+    }
+
+    .help-for-donation img {
+        max-width: 350px;
+    }
+
+    .copy-right-container p {
+        max-width: 330px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 20px;
     }
 }
