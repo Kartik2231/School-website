@@ -48,11 +48,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- header started here -->
         <header class="header">
             <div class="logo">
                 <img src="/images/logo-kindergarten.png" alt="logo-kindergarten">
             </div>
-            <nav>
+
+            <button class="menu-btn" id="menu-btn">☰</button>
+
+            <nav id="nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Academic</a></li>
@@ -201,7 +206,8 @@
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path
                             d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
                     </g>
                 </svg>
             </div>
@@ -213,7 +219,7 @@
 
         <div class="School-news-update-container">
             <div class="school-news-content">
-                <h3>School Video Tour</h3>
+                <h3>School News & Updates</h3>
                 <hr>
             </div>
             <div class="images-content-container">
@@ -223,8 +229,11 @@
                             <img src="/images/shutterstock_135948689-150x150.jpg" alt="">
                         </div>
                         <div class="date-content">
-                            <p>June 6, 2016ByJames Smith</p>
-                            <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                            <p>JUNE 6, 2016 / BY JAMES SMITH</p>
+                            <a href="#">
+                                <h3>Professor Albert joint research on mobile money in Tanzania
+                                </h3>
+                            </a>
                         </div>
                     </div>
 
@@ -233,8 +242,10 @@
                             <img src="/images/shutterstock_218235004-150x150.jpg" alt="">
                         </div>
                         <div class="date-content">
-                            <p>June 6, 2016ByJames Smith</p>
-                            <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                            <p>JUNE 6, 2016 / BY JAMES SMITH</p>
+                            <a href="#">
+                                <h3>A Global MBA for the next generation of business leaders</h3>
+                            </a>
                         </div>
                     </div>
                     <div class="content-second-container">
@@ -243,13 +254,25 @@
                                 <img src="/images/shutterstock_481869205-150x150.jpg" alt="">
                             </div>
                             <div class="date-content">
-                                <p>June 6, 2016ByJames Smith</p>
-                                <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                                <p>JUNE 6, 2016 / BY JAMES SMITH</p>
+                                <a href="#">
+                                    <h3>Professor Tom comments on voluntary recalls by snack brands</h3>
+                                </a>
                             </div>
                         </div>
 
                         <div class="read-blog-btn">
                             <a href="#">Read The Blog</a>
+                            <svg fill="#000000" viewBox="0 0 24 24" id="right-arrow" xmlns="http://www.w3.org/2000/svg"
+                                class="icon line">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path id="primary" d="M3,12H21m-3,3,3-3L18,9"
+                                        style="fill: none; stroke: blue; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -259,8 +282,10 @@
                             <img src="/images/shutterstock_361397258-150x150.jpg" alt="">
                         </div>
                         <div class="date-content">
-                            <p>June 6, 2016ByJames Smith</p>
-                            <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                            <p>JUNE 6, 2016 / BY JAMES SMITH</p>
+                            <a href="#">
+                                <h3>Professor Alexa is interviewed about Twitter’s valuation</h3>
+                            </a>
                         </div>
                     </div>
 
@@ -269,8 +294,10 @@
                             <img src="/images/shutterstock_213333985-150x150.jpg" alt="">
                         </div>
                         <div class="date-content">
-                            <p>June 6, 2016ByJames Smith</p>
-                            <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                            <p>JuNE 6, 2016 / BY JAMES SMITH</p>
+                            <a href="#">
+                                <h3>Kingster Public Safety Survey open through Nov. 30</h3>
+                            </a>
                         </div>
                     </div>
                     <div class="content-container">
@@ -278,16 +305,16 @@
                             <img src="/images/shutterstock_160526219-150x150.jpg" alt="">
                         </div>
                         <div class="date-content">
-                            <p>June 6, 2016ByJames Smith</p>
-                            <h3>Professor Albert joint research on mobile money in Tanzania</h3>
+                            <p>JUNE 6, 2016 / BY JAMES SMITH</p>
+                            <a href="#">
+                                <h3>Audio Post Format</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="study-container">
         <div class="study-content">
             <h2>Apply for Admission</h2>
@@ -303,200 +330,82 @@
             </div>
         </div>
     </div>
-    <div class="kingster-event-container">
-        <div class="kingster-event">
-            <div class="kingster-content">
-                <h2>Kingster Events</h2>
-                <hr>
-            </div>
+
+    <!-- kingster-container started here  -->
+    <section class="kingster-container">
+        <div class="kingster-header">
+            <h3>Kingster Events</h3>
+            <hr>
         </div>
-        <div class="container">
-            <div class="images">
-                <img src="/images/tyler-callahan-662157-unsplash-900x500.jpg"
-                    alt="tyler-callahan-662157-unsplash-900x500">
-                <div class="content">
+
+        <div class="kingster-event-content">
+            <div class="kingster-content-container">
+                <div class="images-container">
+                    <img src="/images/tyler-callahan-662157-unsplash-900x500.jpg" alt="">
+                </div>
+
+                <div class="date-container">
                     <div class="date">
-                        <h3>17</h3>
-                        <p>DEC</p>
+                        <h2>17</h2>
+                        <h4>DEC</h4>
                         <hr>
                     </div>
-                    <div class="a-content">
-                        <a href="#">Fintech & Key Investment Conference</a>
-                        <div class="time">
-                            <div class="time-svg">
-                                <svg fill="#0000ff" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#0000ff" transform="rotate(0)">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>time</title>
-                                        <path
-                                            d="M0 16q0-3.232 1.28-6.208t3.392-5.12 5.12-3.392 6.208-1.28q3.264 0 6.24 1.28t5.088 3.392 3.392 5.12 1.28 6.208q0 3.264-1.28 6.208t-3.392 5.12-5.12 3.424-6.208 1.248-6.208-1.248-5.12-3.424-3.392-5.12-1.28-6.208zM4 16q0 3.264 1.6 6.048t4.384 4.352 6.016 1.6 6.016-1.6 4.384-4.352 1.6-6.048-1.6-6.016-4.384-4.352-6.016-1.632-6.016 1.632-4.384 4.352-1.6 6.016zM14.016 16v-5.984q0-0.832 0.576-1.408t1.408-0.608 1.408 0.608 0.608 1.408v4h4q0.8 0 1.408 0.576t0.576 1.408-0.576 1.44-1.408 0.576h-6.016q-0.832 0-1.408-0.576t-0.576-1.44z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>1:00 pm - 1:00 pm</p>
 
-                            </div>
-                            <div class="time-content">
-                                <div class="location-svg">
-                                    <svg fill="blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                        xml:space="preserve">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: none;
-                                                }
-                                            </style>
-                                            <path
-                                                d="M12,2C8.1,2,5,5.1,5,9c0,6,7,13,7,13s7-7.1,7-13C19,5.1,15.9,2,12,2z M12,11.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5 s2.5,1.1,2.5,2.5S13.4,11.5,12,11.5z">
-                                            </path>
-                                            <rect class="st0" width="24" height="24"></rect>
-                                        </g>
-                                    </svg>
-                                    <p>Kingster Grand Hall</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="date-content-container">
+                        <h2>Fintech & Key Investment Conference</h2>
+                        <p class="time">1:00 pm - 1:00 pm</p>
+                        <p class="grand-hall">Kingster Grand Hall</p>
                     </div>
-                </div>
-                <div class="all-event-btn">
-                    <a href="#">View All Events</a>
-                    <svg fill="#000000" viewBox="0 0 24 24" id="right-arrow" xmlns="http://www.w3.org/2000/svg"
-                        class="icon line">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                        </g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path id="primary" d="M3,12H21m-3,3,3-3L18,9"
-                                style="fill: none; stroke: blue; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
-                            </path>
-                        </g>
-                    </svg>
                 </div>
             </div>
 
+            <div class="kingster-content-container">
+                <div class="images-container">
+                    <img src="/images/tyler-callahan-662157-unsplash-900x500.jpg" alt="">
+                </div>
 
-            <div class="images">
-                <img src="/images/page-title-athletics-900x500.jpg" alt="page-title-athletics-900x500">
-                <div class="content">
+                <div class="date-container">
                     <div class="date">
-                        <h3>04</h3>
-                        <p>NOV</p>
+                        <h2>04</h2>
+                        <h4>NOV</h4>
                         <hr>
                     </div>
-                    <div class="a-content">
-                        <a href="#">Sport Management Information Webinar</a>
-                        <div class="time">
-                            <div class="time-svg">
-                                <svg fill="#0000ff" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#0000ff" transform="rotate(0)">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>time</title>
-                                        <path
-                                            d="M0 16q0-3.232 1.28-6.208t3.392-5.12 5.12-3.392 6.208-1.28q3.264 0 6.24 1.28t5.088 3.392 3.392 5.12 1.28 6.208q0 3.264-1.28 6.208t-3.392 5.12-5.12 3.424-6.208 1.248-6.208-1.248-5.12-3.424-3.392-5.12-1.28-6.208zM4 16q0 3.264 1.6 6.048t4.384 4.352 6.016 1.6 6.016-1.6 4.384-4.352 1.6-6.048-1.6-6.016-4.384-4.352-6.016-1.632-6.016 1.632-4.384 4.352-1.6 6.016zM14.016 16v-5.984q0-0.832 0.576-1.408t1.408-0.608 1.408 0.608 0.608 1.408v4h4q0.8 0 1.408 0.576t0.576 1.408-0.576 1.44-1.408 0.576h-6.016q-0.832 0-1.408-0.576t-0.576-1.44z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>1:00 pm - 1:00 pm</p>
-                            </div>
-                            <div class="time-content">
-                                <div class="location-svg">
-                                    <svg fill="blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                        xml:space="preserve">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: none;
-                                                }
-                                            </style>
-                                            <path
-                                                d="M12,2C8.1,2,5,5.1,5,9c0,6,7,13,7,13s7-7.1,7-13C19,5.1,15.9,2,12,2z M12,11.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5 s2.5,1.1,2.5,2.5S13.4,11.5,12,11.5z">
-                                            </path>
-                                            <rect class="st0" width="24" height="24"></rect>
-                                        </g>
-                                    </svg>
-                                    <p>Kingster Grand Hall</p>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="date-content-container">
+                        <h2>Sport Management Information Webinar</h2>
+                        <p class="time">1:00 pm - 1:00 pm</p>
+                        <p class="grand-hall">Kingster Grand Hall</p>
                     </div>
                 </div>
             </div>
-            <div class="images">
-                <img src="/images/shutterstock_59887279-900x500 (1).jpg" alt="shutterstock_59887279-900x500">
-                <div class="content">
+
+            <div class="kingster-content-container">
+                <div class="images-container">
+                    <img src="/images/tyler-callahan-662157-unsplash-900x500.jpg" alt="">
+                </div>
+
+                <div class="date-container">
                     <div class="date">
-                        <h3>11</h3>
-                        <p>SEP</p>
+                        <h2>11</h2>
+                        <h4>SEP</h4>
                         <hr>
                     </div>
-                    <div class="a-content">
-                        <a href="#">Planning and Facilitating Effective Meetings</a>
-                        <div class="time">
-                            <div class="time-svg">
-                                <svg fill="#0000ff" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#0000ff" transform="rotate(0)">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>time</title>
-                                        <path
-                                            d="M0 16q0-3.232 1.28-6.208t3.392-5.12 5.12-3.392 6.208-1.28q3.264 0 6.24 1.28t5.088 3.392 3.392 5.12 1.28 6.208q0 3.264-1.28 6.208t-3.392 5.12-5.12 3.424-6.208 1.248-6.208-1.248-5.12-3.424-3.392-5.12-1.28-6.208zM4 16q0 3.264 1.6 6.048t4.384 4.352 6.016 1.6 6.016-1.6 4.384-4.352 1.6-6.048-1.6-6.016-4.384-4.352-6.016-1.632-6.016 1.632-4.384 4.352-1.6 6.016zM14.016 16v-5.984q0-0.832 0.576-1.408t1.408-0.608 1.408 0.608 0.608 1.408v4h4q0.8 0 1.408 0.576t0.576 1.408-0.576 1.44-1.408 0.576h-6.016q-0.832 0-1.408-0.576t-0.576-1.44z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>8:00 am - 8:00 am</p>
-                            </div>
-                            <div class="time-content">
-                                <div class="location-svg">
-                                    <svg fill="blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                        xml:space="preserve">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: none;
-                                                }
-                                            </style>
-                                            <path
-                                                d="M12,2C8.1,2,5,5.1,5,9c0,6,7,13,7,13s7-7.1,7-13C19,5.1,15.9,2,12,2z M12,11.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5 s2.5,1.1,2.5,2.5S13.4,11.5,12,11.5z">
-                                            </path>
-                                            <rect class="st0" width="24" height="24"></rect>
-                                        </g>
-                                    </svg>
-                                    <p>Kingster Grand Hall</p>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="date-content-container">
+                        <h2>Planning and Facilitating Effective Meetings</h2>
+                        <p class="time">8:00 am - 8:00 am</p>
+                        <p class="grand-hall">Kingster Grand Hall</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="view-all-btn">
+            <a href="#" class="view-all">View All Events →</a>
+        </div>
+    </section>
+
+    <!-- form created here  -->
     <form action="">
         <div class="form-container">
             <h2>Search For Courses</h2>
@@ -743,8 +652,17 @@
                 </svg>
             </div>
         </div>
-
     </footer>
+
+    <!-- script code started here -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 <!-- hello  -->
