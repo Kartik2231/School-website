@@ -1535,6 +1535,96 @@ input::placeholder {
     }
 }
 
+
+@media (max-width: 416px) {
+    .form #input {
+        width: 400px;
+    }
+
+    .help-for-donation img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Card-container {
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .Card .building-img img {
+        max-width: 380px;
+    }
+
+    .Card .business-man img {
+        max-width: 380px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 380px;
+    }
+
+    .background-container {
+        max-width: 380px;
+    }
+
+    .school-content-div h3 {
+        padding-left: 0;
+    }
+
+    .school-content-div hr {
+        max-width: 380px;
+    }
+
+    .video-img {
+        max-width: 380px;
+    }
+
+    .kingster-content-container img {
+        max-width: 380px;
+    }
+
+    .flexbox-container input {
+        width: 380px;
+    }
+
+    .flexbox-container .select-box select {
+        width: 380px;
+    }
+
+    .form #input {
+        width: 380px;
+    }
+
+    .school-news-content hr {
+        max-width: 380px;
+        margin: auto;
+    }
+
+    .help-for-donation img {
+        max-width: 380px;
+        margin: auto;
+        display: block;
+    }
+
+    .become-a-door-btn a {
+        max-width: 380px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .subscribe-btn a {
+        max-width: 380px;
+    }
+
+    .help-for-donation h3 {
+        margin-left: 10px;
+    }
+    .help-for-donation p{
+        padding-left: 10px;
+    }
+}
+
 @media (max-width: 392px) {
     .background-container {
         max-width: 380px;
