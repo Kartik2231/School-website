@@ -908,7 +908,6 @@ option {
     font-size: 20px;
 }
 
-
 .quick-link h3 {
     font-size: 25px;
     color: var(--text-color);
@@ -1620,7 +1619,8 @@ input::placeholder {
     .help-for-donation h3 {
         margin-left: 10px;
     }
-    .help-for-donation p{
+
+    .help-for-donation p {
         padding-left: 10px;
     }
 }
