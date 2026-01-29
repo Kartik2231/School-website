@@ -99,18 +99,24 @@ body::-webkit-scrollbar {
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 80px;
-    margin-top: 15px;
+    margin-top: 0;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease;
-    padding: 20px 0;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 20px 50px;
+    /* default padding */
+    background-color: transparent;
+    /* initial background */
 }
 
 .header.scrolled {
     background-color: var(--primary-color);
+    /* adjust color */
+    padding: 10px 50px;
+    /* optional smaller padding on scroll */
 }
 
 header .logo img {
@@ -470,48 +476,6 @@ nav ul li a:hover {
     padding: 1.5px;
     border: none;
     background-color: var(--primary-color);
-}
-
-.know-first-container {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    margin-top: 80px;
-    flex-wrap: wrap;
-}
-
-.things-to-heading h2 {
-    font-size: 22px;
-    color: #161616;
-}
-
-.things-to-heading p {
-    max-width: 620px;
-    color: #6b6b6b;
-    font-size: 17px;
-    margin-top: 40px;
-    line-height: 30px;
-}
-
-.when-to-apply p {
-    font-weight: 700;
-    margin-bottom: 40px;
-    font-size: 22px;
-    color: #161616;
-}
-
-table thead tr th {
-    background-color: var(--secondary-color);
-    padding: 15px 40px;
-    color: var(--text-color);
-    font-weight: 400;
-}
-
-table tbody tr th {
-    background-color: #f3f3f3;
-    color: #949494;
-    font-weight: 400;
-    padding: 20px 30px;
 }
 
 @media (max-width: 1400px) {

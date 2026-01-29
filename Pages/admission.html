@@ -59,7 +59,7 @@
                     <li><a href="academic.html">Academic</a></li>
                     <li><a href="page.html">Pages</a></li>
                     <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Courses</a></li>
+                    <li><a href="courses.html">Courses</a></li>
                     <li><a href="#">Athletics</a></li>
                     <li><a href="#">School Life</a></li>
                     <div class="search">
@@ -221,81 +221,10 @@
     </div>
 
     <!-- thing to know first container code started here -->
+
     <div class="things-to-know-container">
-        <div class="know-first-container">
-            <div class="things-to-heading">
-                <h2>Things To Know First</h2>
-                <p>The Common Application is required for students applying to any or all of KU’s three degree. You’ll
-                    be
-                    able to choose your campus and program s that you are interested.</p>
-
-                <div class="you-will-need">
-                    <div class="need-content">
-                        <p>You Will need:</p>
-                    </div>
-                    <div class="contact-info">
-                        <div class="target-svg">
-                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <title>target [#784]</title>
-                                    <desc>Created with Sketch.</desc>
-                                    <defs> </defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -4759.000000)"
-                                            fill="#000000">
-                                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                                                <path
-                                                    d="M176,4609 C176,4610.105 175.105,4611 174,4611 C172.895,4611 172,4610.105 172,4609 C172,4607.895 172.895,4607 174,4607 C175.105,4607 176,4607.895 176,4609 M174,4613 C171.794,4613 170,4611.206 170,4609 C170,4606.794 171.794,4605 174,4605 C176.206,4605 178,4606.794 178,4609 C178,4611.206 176.206,4613 174,4613 M174,4603 C170.686,4603 168,4605.686 168,4609 C168,4612.314 170.686,4615 174,4615 C177.314,4615 180,4612.314 180,4609 C180,4605.686 177.314,4603 174,4603 M174,4617 C169.589,4617 166,4613.411 166,4609 C166,4604.589 169.589,4601 174,4601 C178.411,4601 182,4604.589 182,4609 C182,4613.411 178.411,4617 174,4617 M174,4599 C168.477,4599 164,4603.477 164,4609 C164,4614.523 168.477,4619 174,4619 C179.523,4619 184,4614.523 184,4609 C184,4603.477 179.523,4599 174,4599"
-                                                    id="target-[#784]"> </path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="apply-container">
-                <div class="when-to-apply">
-                    <p>When To Apply?</p>
-                </div>
-                <div class="table-container">
-                    <div class="table-heading">
-
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Application Deadline</th>
-                                <th>Decision</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Early Decision 1</th>
-                                <th>November 1</th>
-                                <th>December 15</th>
-                            </tr>
-                        </tbody>
-                        <tr>
-                            <th>Early Decision 2</th>
-                            <th>January 1</th>
-                            <th>February 15</th>
-                        </tr>
-                        <tr>
-                            <th>Regular Decision</th>
-                            <th>January 1</th>
-                            <th>April 1</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+        <div class="things-know-first">
+            <h2>Things To Know First</h2>
         </div>
     </div>
     <!-- footer section started here -->
@@ -425,6 +354,14 @@
 
         menuBtn.addEventListener('click', () => {
             nav.classList.toggle('active');
+        });
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
     </script>
     <!-- script code end here -->
