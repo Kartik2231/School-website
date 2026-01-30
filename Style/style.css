@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     height: 700px;
     position: relative;
+    margin-top: 0;
 }
 
 .hero-section::after {
@@ -36,6 +37,7 @@ body::-webkit-scrollbar {
     height: 100%;
     background: linear-gradient(to bottom, rgba(17, 15, 15, 0.4), rgba(25, 16, 16, 0.2));
     z-index: 2;
+    margin-top: 0;
     /* overflow: hidden; */
 }
 
@@ -56,6 +58,12 @@ body::-webkit-scrollbar {
     padding-left: 100px;
 }
 
+.hero-content {
+    position: absolute;
+    bottom: 10%;
+    z-index: 4;
+}
+
 .hero-content i {
     font-size: 47px;
     color: var(--text-color);
@@ -69,12 +77,12 @@ body::-webkit-scrollbar {
 
 .header {
     background: #0b3c5d;
-    padding: 15px 0;
+    padding: 25px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 20;
     transition: transform 0.4s ease;
 }
 
@@ -83,9 +91,9 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
-    padding: 0 20px;
+    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,15 +129,24 @@ body::-webkit-scrollbar {
 }
 
 .nav {
+    /* display: flex; */
+    /* gap: 25px; */
+}
+
+.nav ul {
     display: flex;
     gap: 25px;
 }
 
 .nav a {
-    color: #fff;
+    color: #bfbfbf;
     text-decoration: none;
     font-size: 15px;
     position: relative;
+}
+
+.nav ul a:first-child {
+    color: var(--text-color);
 }
 
 .nav a::after {
@@ -1159,41 +1176,9 @@ input::placeholder {
 }
 
 @media (max-width: 1200px) {
-    .top-header {
-        display: none;
-    }
-
-    .hero-section {
-        margin: 0;
-    }
-
-    .header {
-        justify-content: space-between;
-        padding: 15px 80px;
-        margin: 0;
-    }
-
-    nav {
-        position: absolute;
-        top: 70px;
-        right: 0%;
-        background: var(--text-color);
-        width: 200px;
-        display: none;
-        flex-direction: column;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-
     .header {
         background: #0b3c5d;
-        padding: 15px 0;
+        /* padding: 15px 0; */
         position: fixed;
         top: 0;
         left: 0;
@@ -1284,22 +1269,13 @@ input::placeholder {
         background: #fff;
     }
 
-    nav ul li a {
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 40%;
         text-align: center;
-        display: block;
-        margin: auto;
-    }
-
-    nav ul {
-        line-height: 40px;
-    }
-
-    nav ul li:first-child a {
-        color: var(--secondary-color);
-    }
-
-    nav ul li a:hover {
-        color: var(--secondary-color);
+        line-height: 30px;
     }
 
     .menu-toggle {
@@ -1321,6 +1297,7 @@ input::placeholder {
 
     .nav.active {
         display: flex;
+        flex-direction: column;
     }
 }
 
