@@ -877,6 +877,26 @@ hr {
     }
 }
 
+@media (max-width: 416px) {
+    .section2 {
+        padding: 0 18px;
+    }
+
+    .section2-content h2 {
+        line-height: 28px;
+    }
+
+    .section2-content p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .svg-container span {
+        max-width: 330px;
+        line-height: 22px;
+    }
+}
+
 @media (max-width: 392px) {
     .school-department {
         left: 4%;
@@ -905,6 +925,7 @@ hr {
     .form-box h2 {
         font-size: 18px;
     }
+
     .join-special-event {
         max-width: 350px;
     }
@@ -990,6 +1011,13 @@ hr {
     }
 }
 
+@media (max-width: 376px) {
+    .svg-container span {
+        font-size: 11px;
+        max-width: 300px ;
+    }
+}
+
 @media (max-width: 346px) {
     .section2 {
         padding: 0;
@@ -1027,5 +1055,19 @@ hr {
 
     .course-curriculum-container {
         padding: 0 10px;
+    }
+
+    .section2-content p {
+        font-size: 11px;
+        max-width: 320px;
+    }
+
+    .svg-container span {
+        max-width: 280px;
+        font-size: 11px;
+    }
+
+    .form-box {
+        padding: 50px 20px;
     }
 }

@@ -115,7 +115,7 @@ body::-webkit-scrollbar {
 .header.scrolled {
     background-color: var(--primary-color);
     /* adjust color */
-    padding: 10px 50px;
+    padding: 20px 10px;
     /* optional smaller padding on scroll */
 }
 
@@ -478,6 +478,125 @@ nav ul li a:hover {
     background-color: var(--primary-color);
 }
 
+.things-know-first {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.thing-content h2 {
+    font-size: 22px;
+    color: #161616;
+    /* margin-top: 20px; */
+}
+
+.application-content p {
+    max-width: 620px;
+    font-size: 17px;
+    color: #6b6b6b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.you-will-need p {
+    color: #6b6b6b;
+    font-size: 17px;
+    max-width: 600px;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info svg {
+    height: 18px;
+    margin-bottom: 0px;
+}
+
+.contact-info svg:nth-of-type(1) {
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-container .Request-tour {
+    background-color: var(--secondary-color);
+    padding: 20px 30px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info {
+    padding: 20px 30px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.when-to-apply p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #161616;
+}
+
+.table-container table {
+    margin-top: 20px;
+}
+
+.table-container table .t-heading {
+    background-color: var(--secondary-color);
+    padding: 12px 40px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.t-row {
+    background-color: #e6e6e6;
+    color: #949494;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.submit-document-container h3 {
+    font-size: 22px;
+    color: #161616;
+    margin-top: 50px;
+}
+
+.submit-document-container span {
+    color: #6b6b6b;
+    font-size: 17px;
+    margin-top: 30px;
+    display: block;
+}
+
+.submit-document-container p {
+    font-size: 16px;
+    color: #919191;
+    line-height: 28px;
+}
+
+.submit-document-container p:nth-of-type(1) {
+    margin-top: 30px;
+}
+
 @media (max-width: 1400px) {
     .education-container {
         flex-wrap: wrap;
@@ -550,6 +669,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 576px) {
+    .hero-section {
+        /* background-size: cover; */
+        background-position: center;
+    }
+
     .header {
         padding: 15px 10px;
     }
@@ -557,15 +681,33 @@ nav ul li a:hover {
     .header .logo img {
         max-width: 220px;
     }
-}
 
-@media (max-width: 448px) {
     .apply-to-kingster {
-        left: 3%;
+        left: 5%;
     }
 
     .apply-kingster {
-        margin-left: 20px;
+        position: absolute;
+        left: 5%;
+        /* display: none; */
+        margin-left: 0;
+    }
+
+    .about-container {
+        padding: 0 30px;
+        gap: 0;
+        margin-top: 80px;
+    }
+
+    .education-container {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 448px) {
+
+    .apply-to-kingster {
+        left: 3%;
     }
 
     .apply-to-kingster h2 {
@@ -578,9 +720,15 @@ nav ul li a:hover {
         /* padding-left: 20px; */
     }
 
+    .about-container h2 {
+        font-size: 25px;
+    }
+
     .about-content p {
         font-size: 16px;
         max-width: 900px;
+        margin-top: 10px;
+        font-size: 14px;
     }
 
     .education-container {
@@ -609,6 +757,35 @@ nav ul li a:hover {
 
     .university p {
         margin-top: 0;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        background-position: center;
+    }
+
+    .things-to-know-container {
+        padding: 0 25px;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    .btn-container a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submit-document-container {
+        padding: 0 20px;
+    }
+    .table{
+        width: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
     }
 }
 
