@@ -25,8 +25,8 @@ body::-webkit-scrollbar {
     background-image: url(/images/vector-cartoon-illustration-school-building-green-lawn-road-trees-educalion-l_134830-1588.avif);
     background-size: cover;
     height: 700px;
-    position: relative;
-    background-position: center;
+    /* position: relative; */
+    /* background-position: center; */
 }
 
 .hero-section::after {
@@ -105,11 +105,6 @@ body::-webkit-scrollbar {
     color: #dcdcdc;
 }
 
-.nav {
-    /* display: flex; */
-    /* gap: 25px; */
-}
-
 .nav ul {
     display: flex;
     gap: 25px;
@@ -159,6 +154,7 @@ body::-webkit-scrollbar {
     bottom: 5%;
     left: 5%;
     color: var(--text-color);
+    z-index: 4;
 }
 
 .school-department p {
@@ -677,10 +673,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-    .top-header {
-        display: none;
-    }
-
     .header {
         padding: 15px 10px;
     }
@@ -706,7 +698,7 @@ hr {
         padding: 10px;
     }
 
-    .menu-btn {
+    .menu-toggle {
         display: block;
     }
 
@@ -714,7 +706,7 @@ hr {
         display: flex;
     }
 
-    .menu-btn {
+    .menu-toggle {
         /* background-color: var(--secondary-color); */
         color: var(--text-color);
         text-align: center;
