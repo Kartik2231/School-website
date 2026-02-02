@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.clock-tower-img {
+    position: relative;
+    background-image: url(/images/clock-tower.jpg);
+    height: 700px;
+    width: 550px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-news-letter {
+    text-align: center;
+}
+
+.subscribe-content .form .subscribe-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.envelop-img {
+    margin-top: 100px;
+}
+
+.subscribe-content h3 {
+    margin-top: 50px;
+}
+
+.subscribe-content h4 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.subscribe-content p {
+    max-width: 400px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #6c6c6c;
+    margin-bottom: 40px;
+}
+
+.subscribe-btn a {
+    max-width: 390px;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.clock-tower-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 60, 140, 0.7);
+}
+
+.link {
+    display: flex;
+    /* align-items: center; */
+    /* gap: 10px; */
+}
+
+.icon-link {
+    /* rotate: 50px; */
+    transform: rotate(-80deg);
+    font-size: 20px;
+}
+
+.quick-link h3 {
+    font-size: 25px;
+    color: var(--text-color);
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quick-link li {
+    list-style-type: none;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+.quick-link li a {
+    color: var(--text-color);
+    position: relative;
+}
+
+.quick-link hr {
+    background-color: var(--text-color);
+    padding: 0.8px;
+    border: none;
+    width: 300px;
+    position: relative;
+}
+
+.form #input {
+    background-color: #f2f2f2;
+    /* color: black; */
+    padding: 20px 20px;
+    border: none;
+    width: 300px;
+    color: #959595;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.subscribe-btn a {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    display: block;
+    margin-top: 20px;
+    max-width: 300px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: #959595;
+    /* margin-top: 20px; */
+}
+
+.help-for-donation img {
+    max-width: 380px;
+}
+
+.help-for-donation p {
+    max-width: 400px;
+    font-size: 15px;
+    color: #747474;
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.donation-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.help-for-donation {
+    margin-top: 70px;
+}
+
+.help-for-donation h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #182847;
+}
+
+.become-a-door-btn a {
+    text-align: center;
+    background-color: var(--secondary-color);
+    display: block;
+    margin-top: 30px;
+    max-width: 200px;
+    padding: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.become-a-door-btn svg {
+    height: 15px;
+}
+
+@media (max-width: 448px) {
+    .link {
+        justify-content: center;
+    }
+
+    .donation-container {
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .envelop-img {
+        margin-top: 30px;
+    }
+
+    .form #input {
+        width: 420px;
+    }
+
+    .subscribe-btn a {
+        max-width: 420px;
+        border-radius: 4px;
+    }
+
+    .help-for-donation img {
+        max-width: 420px;
+        border-radius: 4px;
+    }
+
+    .help-for-donation p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 420px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 420px) {
+    .form #input {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form #input {
+        width: 380px;
+    }
+
+    .help-for-donation img {
+        max-width: 380px;
+        margin: auto;
+        display: block;
+    }
+
+    .become-a-door-btn a {
+        max-width: 380px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .subscribe-btn a {
+        max-width: 380px;
+    }
+
+    .help-for-donation h3 {
+        margin-left: 10px;
+    }
+
+    .help-for-donation p {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 392px) {
+
+    .form #input {
+        max-width: 380px;
+    }
+
+    .envelop-img img {
+        max-width: 70px;
+    }
+
+    .subscribe-btn a {
+        max-width: 380px;
+    }
+
+    .subscribe-content h3 {
+        margin-top: 20px;
+    }
+
+    .subscribe-content h4 {
+        margin-top: 10px;
+    }
+
+    .subscribe-content p {
+        margin-top: 10px;
+    }
+
+    .help-for-donation {
+        margin: auto;
+    }
+
+    .help-for-donation h3 {
+        padding-left: 10px;
+    }
+
+    .help-for-donation p {
+        padding-left: 10px;
+        font-size: 15px;
+        max-width: 430px;
+    }
+
+    .help-for-donation img {
+        max-width: 380px;
+        margin: auto;
+        display: block;
+    }
+
+    .become-a-door-btn a {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .form #input {
+        max-width: 360px;
+    }
+
+    .subscribe-btn a {
+        max-width: 360px;
+    }
+
+    .help-for-donation img {
+        max-width: 360px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 360px;
+    }
+
+    .subscribe-content p {
+        max-width: 330px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .form #input {
+        max-width: 330px;
+        margin-top: 10px;
+    }
+
+    .help-for-donation img {
+        max-width: 330px;
+    }
+
+    .help-for-donation h3 {
+        padding-left: 0px;
+    }
+
+    .help-for-donation p {
+        font-size: 14px;
+        max-width: 330px;
+        padding-left: 3px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .quick-link h3 {
+        font-weight: 600;
+    }
+
+    .subscribe-content p {
+        font-size: 14px;
+        max-width: 310px;
+    }
+
+    .form #input {
+        max-width: 310px;
+        margin-top: 20px;
+    }
+
+    .subscribe-btn a {
+        font-weight: 600;
+    }
+
+    .help-for-donation img {
+        max-width: 310px;
+    }
+
+    .help-for-donation p {
+        max-width: 310px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 310px;
+        /* display: inline-block; */
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 310px) {
+
+    .quick-link hr {
+        width: 280px;
+    }
+
+    .subscribe-content h3 {
+        font-weight: 600;
+    }
+
+    .subscribe-content p {
+        font-size: 13px;
+        max-width: 280px;
+    }
+
+    .form #input {
+        max-width: 280px;
+    }
+
+    .subscribe-btn a {
+        font-size: 13px;
+    }
+
+    .help-for-donation img {
+        max-width: 280px;
+    }
+
+    .help-for-donation h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 2px;
+    }
+
+    .help-for-donation p {
+        max-width: 280px;
+        font-size: 13px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 280px) {
+    .quick-link hr {
+        max-width: 250px;
+    }
+
+    .subscribe-content p {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    .form #input {
+        max-width: 250px;
+    }
+
+    .help-for-donation img {
+        max-width: 250px;
+    }
+
+    .help-for-donation p {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 250px) {
+    .quick-link hr {
+        max-width: 220px;
+    }
+
+    .subscribe-content h3 {
+        font-size: 15px;
+    }
+
+    .subscribe-content h4 {
+        font-size: 13px;
+    }
+
+    .subscribe-content p {
+        max-width: 210px;
+        font-size: 10px;
+    }
+
+    .form #input {
+        max-width: 220px;
+    }
+
+    .help-for-donation img {
+        max-width: 220px;
+    }
+
+    .help-for-donation p {
+        font-size: 11px;
+        max-width: 230px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 220px) {
+    .quick-link hr {
+        max-width: 200px;
+    }
+
+    .form #input {
+        max-width: 200px;
+    }
+
+    .form #input::placeholder {
+        font-size: 12px;
+    }
+
+    .help-for-donation img {
+        max-width: 200px;
+    }
+
+    .help-for-donation p {
+        max-width: 210px;
+        font-size: 10px;
+    }
+
+    .become-a-door-btn a {
+        max-width: 200px;
+    }
+}

@@ -306,6 +306,12 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (max-width: 377px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 320px) {
     .container {
         padding: 0 10px;
@@ -386,5 +392,15 @@ body::-webkit-scrollbar {
     .menu-toggle span {
         width: 20px;
         height: 3px;
+    }
+}
+
+@media (max-width: 202px) {
+    .header {
+        padding: 35px 0;
+    }
+
+    .container {
+        padding: 0;
     }
 }

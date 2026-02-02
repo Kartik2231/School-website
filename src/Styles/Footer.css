@@ -1,0 +1,153 @@
+.copy-right-container {
+    display: flex;
+    background-color: #2e2d2d;
+    padding: 30px 110px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copy-right-container p {
+    color: #838383;
+    font-size: 15px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.footer-container {
+    background-color: #181818;
+    padding: 80px 0;
+}
+
+.our-campus ul {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.our-campus hr {
+    width: 300px;
+}
+
+.Academis h3 {
+    color: var(--text-color);
+    font-size: 17px;
+    /* font-weight: 100; */
+}
+
+.Campus-life h3 {
+    color: var(--text-color);
+}
+
+.Campus-life hr {
+    width: 300px;
+}
+
+.Campus-life ul {
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.Academis hr {
+    width: 300px;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    padding: 0.8px;
+    border: none;
+}
+
+.Academis ul {
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.Academis ul li a {
+    font-size: 16px;
+}
+
+.logo-content img {
+    height: 50px;
+}
+
+.footer-container h3 {
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+.box35300 {
+    margin-top: 30px;
+}
+
+.box35300 ul {
+    line-height: 30px;
+}
+
+.our-campus ul {
+    line-height: 35px;
+}
+
+.admin p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.admin a {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+.our-campus hr {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.8px;
+    margin-top: 10px;
+}
+
+.Campus-life hr {
+    background-color: var(--secondary-color);
+    padding: 0.8px;
+    border: none;
+    margin-top: 10px;
+}
+
+.footer-container ul li {
+    color: var(--text-color);
+    list-style-type: none;
+    color: #8d8d8d;
+}
+
+.footer-container ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.admin p {
+    color: var(--text-color);
+}
+
+.admin a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.admin hr {
+    background-color: var(--secondary-color);
+    padding: 0.8px;
+    border: none;
+    /* max-width: 340px; */
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons svg {
+    height: 22px;
+}

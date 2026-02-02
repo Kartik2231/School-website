@@ -1,4 +1,4 @@
-import Study from '../assets/Study.css';
+import '../Styles/Study.css';
 function Study() {
     return (
         <>
