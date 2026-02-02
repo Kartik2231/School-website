@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.school-video-tour-container {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.school-video-tour {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.school-content-div h3 {
+    font-size: 20px;
+    color: #212052;
+    margin-bottom: 10px;
+}
+
+.school-content-div hr {
+    background-color: var(--secondary-color);
+    padding: 1px;
+    border: none;
+}
+
+.video-img {
+    position: relative;
+    width: 420px;
+    height: 250px;
+    background-image: url("../assets/shutterstock_59887279-900x500.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.video-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-img svg {
+    color: #ffffff;
+    height: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.take-a-tour p {
+    max-width: 420px;
+    color: #5c5c5c;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.school-news-content h3 {
+    color: #212052;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.school-news-content hr {
+    padding: 1px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+}
+
+.images-content-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.content-container img {
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.date-content p {
+    font-weight: 600;
+    color: #959595;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.date-content a {
+    text-decoration: none;
+}
+
+.date-content a h3 {
+    font-size: 17px;
+    color: #353372;
+    max-width: 310px;
+    margin-top: 5px;
+    line-height: 22px;
+}
+
+.read-blog-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.read-blog-btn a {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+.read-blog-btn svg {
+    height: 26px;
+}
+
+.content-second-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Media Queries for Video Tour Content */
+
+/* Tablet / Medium Screens */
+@media (max-width: 768px) {
+    .school-video-tour-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .images-content-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 448px) {
+    .video-img {
+        max-width: 420px;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+
+    .take-a-tour p {
+        font-size: 14px;
+        padding-left: 18px;
+    }
+
+    .school-video-tour-container {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .images-content-container {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .date-content a h3 {
+        font-size: 14px;
+    }
+
+    .school-content-div h3 {
+        padding-left: 10px;
+    }
+
+    .school-content-div hr {
+        max-width: 420px;
+        display: block;
+        margin: auto;
+    }
+
+    .School-news-update-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .video-img {
+        max-width: 370px;
+        /* display: none; */
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 432px) {
+    .school-video-tour-container {
+        gap: 20px;
+    }
+
+    .school-content-div h3 {
+        padding-left: 20px;
+    }
+
+    .school-content-div hr {
+        /* max-width: 380px; */
+    }
+
+    .video-img {
+        max-width: 380px;
+    }
+
+    .images-content-container {
+        gap: 40px;
+    }
+
+    .school-video-tour-container {
+        justify-content: center;
+    }
+
+    .school-video-tour-container img {
+        /* width: 380px; */
+        display: block;
+        /* margin: auto; */
+        height: 100%;
+        height: 80px;
+    }
+
+    .date-content a h3 {
+        font-size: 14px;
+    }
+
+    .content-container {
+        /* flex-wrap: wrap; */
+    }
+
+    .video-img {
+        max-width: 370px;
+    }
+
+    .take-a-tour p {
+        max-width: 370px;
+    }
+
+    .school-content-div hr {
+        max-width: 370px;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 376px) {
+    .date-content p {
+        font-size: 12px;
+    }
+
+    .video-img {
+        max-width: 330px;
+    }
+
+    .school-content-div hr {
+        max-width: 330px;
+    }
+
+}
+
+
+/* Ultra Small Screens */
+@media (max-width: 330px) {
+    .school-content-div hr {
+        max-width: 310px;
+    }
+
+    .video-img {
+        max-width: 310px;
+    }
+
+    .school-video-tour-container img {
+        max-width: 310px;
+    }
+
+    .date-content a h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 310px) {
+    .school-content-div h3 {
+        padding-left: 10px;
+    }
+
+    .school-content-div hr {
+        max-width: 280px;
+    }
+
+    .video-img {
+        max-width: 280px;
+    }
+
+    .date-content p {
+        font-size: 9px;
+    }
+
+    .date-content a h3 {
+        font-size: 11px;
+    }
+
+    .content-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 280px) {
+    .School-news-update-container {
+        padding: 0 14px;
+    }
+
+    .school-news-content h3 {
+        font-size: 18px;
+    }
+
+    .school-content-div hr {
+        max-width: 250px;
+    }
+
+    .video-img {
+        max-width: 250px;
+    }
+
+    .take-a-tour p {
+        font-size: 12px;
+        padding-left: 14px;
+    }
+
+    .date-content p {
+        font-size: 8px;
+    }
+
+    .date-content a h3 {
+        font-size: 10px;
+        line-height: 17px;
+    }
+
+    .read-blog-btn a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 250px) {
+    .school-content-div hr {
+        max-width: 220px;
+    }
+
+    .video-img {
+        max-width: 220px;
+        height: 150px;
+    }
+
+    .take-a-tour p {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 220px) {
+    .school-content-div hr {
+        max-width: 200px;
+    }
+
+    .video-img {
+        max-width: 200px;
+    }
+
+    .take-a-tour p {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+
+    .school-news-content h3 {
+        font-size: 15px;
+    }
+
+    .content-container img {
+        height: 60px;
+    }
+
+    .date-content p {
+        font-size: 6px;
+    }
+
+    .date-content a h3 {
+        font-size: 7px;
+        line-height: 14px;
+    }
+}

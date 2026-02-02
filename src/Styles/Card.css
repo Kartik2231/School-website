@@ -1,0 +1,429 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* padding: 30px; */
+}
+
+.background-container {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    /* overflow: hidden; */
+}
+
+.school-life {
+    display: flex;
+    gap: 20px;
+}
+
+.academic-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.athletics-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.background-container h3 {
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.background-container a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Card {
+    position: relative;
+    z-index: 10;
+    bottom: 30px;
+}
+
+.Card .building-img img {
+    max-width: 450px;
+}
+
+.Card .business-man img {
+    max-width: 450px;
+}
+
+.Card .work-from-home img {
+    max-width: 450px;
+}
+
+.wonder-ful-content p {
+    max-width: 400px;
+    font-size: 15px;
+    color: #555555;
+    margin-top: 20px;
+}
+
+.wonder-ful-content a {
+    display: block;
+    margin-top: 20px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.learn-more {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.learn-more svg {
+    height: 28px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 448px) {
+    .Card-container {
+        gap: 40px;
+    }
+
+    .Card .building-img img {
+        width: 420px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .Card .business-man img {
+        width: 420px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .Card .work-from-home img {
+        width: 420px;
+        border-bottom-left-radius: 4px;
+        /* border-radius: 6px; */
+    }
+
+    .background-container {
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 40px 20px;
+    }
+
+    .wonder-ful-content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .background-container {
+        max-width: 370px;
+    }
+
+    .Card .building-img img {
+        max-width: 370px;
+        /* margin: auto; */
+        /* display: block; */
+    }
+
+    .Card .business-man img {
+        max-width: 370px;
+        /* margin: auto; */
+        /* display: block; */
+    }
+
+    .Card .work-from-home img {
+        max-width: 370px;
+        /* margin: auto; */
+    }
+
+    .wonder-ful-content p {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 416px) {
+    .background-container {
+        max-width: 370px;
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .Card-container {
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .Card .building-img img {
+        max-width: 380px;
+    }
+
+    .Card .business-man img {
+        max-width: 380px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 380px;
+    }
+
+    .background-container {
+        max-width: 380px;
+    }
+
+}
+
+@media (max-width: 392px) {
+    .background-container {
+        max-width: 380px;
+        margin: auto;
+    }
+
+    .Card-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card .business-man img {
+        max-width: 380px;
+        display: block;
+        margin: auto;
+    }
+
+    .wonder-ful-content p {
+        padding-left: 8px;
+    }
+
+    .Card .building-img img {
+        max-width: 380px;
+        display: block;
+        margin: auto;
+    }
+
+    .Card .work-from-home img {
+        max-width: 380px;
+        display: block;
+        margin: auto;
+    }
+
+    .learn-more {
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .background-container {
+        max-width: 360px;
+    }
+
+    .Card .building-img img {
+        max-width: 360px;
+    }
+
+    .Card .business-man img {
+        max-width: 360px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .background-container {
+        max-width: 360px;
+    }
+
+    .Card .building-img img {
+        max-width: 360px;
+    }
+
+    .Card .business-man img {
+        max-width: 360px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 360px;
+    }
+
+    .wonder-ful-content p {
+        max-width: 355px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .Card .building-img img {
+        max-width: 330px;
+    }
+
+    .Card .business-man img {
+        max-width: 330px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 330px;
+    }
+
+    .wonder-ful-content p {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .background-container {
+        max-width: 310px;
+    }
+
+    .Card .building-img img {
+        max-width: 310px;
+    }
+
+    .Card .business-man img {
+        max-width: 310px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 310px) {
+
+    .background-container {
+        max-width: 280px;
+    }
+
+    .background-container h3 {
+        font-weight: 600;
+    }
+
+    .Card .building-img img {
+        max-width: 280px;
+    }
+
+    .wonder-ful-content p {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+    .Card .business-man img {
+        max-width: 280px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 280px) {
+    .background-container {
+        max-width: 250px;
+    }
+
+    .Card .building-img img {
+        max-width: 250px;
+    }
+
+    .Card .business-man img {
+        max-width: 250px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 250px;
+    }
+
+    .learn-more {
+        padding-left: 0;
+    }
+
+    .wonder-ful-content p {
+        max-width: 250px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 250px) {
+    .background-container {
+        max-width: 220px;
+    }
+
+    .Card .building-img img {
+        max-width: 220px;
+    }
+
+    .Card .business-man img {
+        max-width: 220px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 220px;
+    }
+
+    .wonder-ful-content p {
+        max-width: 220px;
+        font-size: 11px;
+    }
+
+    .wonder-ful-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 222px) {
+    .background-container {
+        padding: 20px 10px;
+        max-width: 200px;
+    }
+
+    .background-container h3 {
+        font-size: 15px;
+    }
+
+    .background-container a {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .Card .building-img img {
+        max-width: 200px;
+    }
+
+    .Card .business-man img {
+        max-width: 200px;
+    }
+
+    .Card .work-from-home img {
+        max-width: 200px;
+    }
+
+    .wonder-ful-content p {
+        font-size: 9px;
+        max-width: 200px;
+    }
+
+    .wonder-ful-content a {
+        font-size: 12px;
+        font-family: 'Poppins';
+    }
+
+    .wonder-ful-content svg {
+        height: 20px;
+    }
+}
