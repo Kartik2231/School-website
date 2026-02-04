@@ -218,10 +218,6 @@ body {
         padding-left: 20px;
     }
 
-    .school-content-div hr {
-        /* max-width: 380px; */
-    }
-
     .video-img {
         max-width: 380px;
     }
@@ -244,10 +240,6 @@ body {
 
     .date-content a h3 {
         font-size: 14px;
-    }
-
-    .content-container {
-        /* flex-wrap: wrap; */
     }
 
     .take-a-tour p {
@@ -277,6 +269,12 @@ body {
 
     .video-img {
         max-width: 360px;
+    }
+}
+
+@media (max-width: 416px) {
+    .school-content-div hr {
+        max-width: 370px;
     }
 }
 

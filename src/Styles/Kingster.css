@@ -200,12 +200,30 @@ body {
         line-height: 25px;
     }
 
+    .kingster-header {
+        padding: 10px;
+    }
+
     .kingster-content-container img {
-        width: 400px;
+        max-width: 420px;
+    }
+
+    .kingster-header hr {
+        max-width: 420px;
     }
 
     .date-container {
         margin-top: 0;
+    }
+
+    .take-a-tour p {
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 416px) {
+    .kingster-content-container img {
+        max-width: 370px;
     }
 }
 
@@ -222,6 +240,11 @@ body {
     .flexbox-container .select-box select {
         width: 380px;
     }
+}
+
+input:focus {
+    border: none;
+    outline: none;
 }
 
 @media (max-width: 392px) {

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.school-department {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: var(--text-color);
+    z-index: 4;
+}
+
+.school-department p {
+    font-size: 21px;
+}
+
+.school-department h2 {
+    font-size: 48px;
+}
+
+.about-content-section {
+    display: flex;
+    gap: 10px;
+}
+
+.about-content-section {
+    padding: 20px;
+    padding-left: 80px;
+    /* margin-left: 90px; */
+}
+
+.about-content-section a {
+    color: #a0a0a0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.about-content-section span {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.about-content-section p {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1200px) {
+
+    .about-content-section {
+        padding: 20px 0;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 432px) {
+    .school-department {
+        left: 5%;
+    }
+}
+
+@media (max-width: 392px) {
+    .school-department {
+        left: 4%;
+    }
+}

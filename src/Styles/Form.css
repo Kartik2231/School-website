@@ -145,6 +145,22 @@ option {
 
 }
 
+@media (max-width: 432px) {
+    .flexbox-container input {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 416px) {
+    .flexbox-container input {
+        max-width: 370px;
+    }
+
+    .flexbox-container .select-box select {
+        max-width: 370px;
+    }
+}
+
 @media (max-width: 400px) {
     .flexbox-container input {
         width: 380px;
